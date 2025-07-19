@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: "Inconsolata", monospace;
+}
+
+.background-decorations {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image:
+        url("assets/images/pattern-circle.svg"),
+        /* top-left circle */
+        url("assets/images/pattern-circle.svg"),
+        /* bottom-right circle */
+        url("assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+        /* bottom squiggle */
+        url("assets/images/pattern-squiggly-line-top.svg"),
+        /* top-right squiggle */
+        url("assets/images/pattern-lines.svg"),
+        /* center lines */
+        url("assets/images/background-desktop.png");
+    /* main bg */
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+    background-size:
+        150px,
+        /* pattern-circle1 */
+        150px,
+        /* pattern-circle2 */
+        500px,
+        /* bottom squiggle */
+        350px,
+        /* top-right squiggle */
+        100% auto,
+        /* pattern-lines */
+        cover;
+    /* background image */
+
+    background-position:
+        30px -70px,
+        /* top-left */
+        calc(100% - 190px) calc(100% - 120px),
+        /* bottom-right */
+        0% 100%,
+        /* bottom-left squiggle */
+        100% 50px,
+        /* top-right squiggle */
+        0%,
+        /* lines */
+        center center;
+    /* base background */
+}
+
+.main-container {
+    text-align: center;
+    /* border: 2px solid wheat; */
+    margin: 0 200px 0 200px;
+}
+
+.main-container .coding-logo {
+    width: 100px;
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+
+.main-container .main-heading {
+    /* border: 2px solid red; */
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0 80px !important;
+}
+
+.main-container p {
+    /* border: 2px solid red; */
+    color: hsl(245, 15%, 58%);
+    font-size: 1.2rem;
+}
+
+.input-container {
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 100px;
+    margin: auto;
+}
+
+.input-container span {
+    /* border: 1px solid red; */
+    color: hsl(252, 6%, 83%);
+}
+
+.drop-field {
+    background-color: transparent;
+    border: dashed hsl(245, 19%, 35%);
+    border-radius: 10px;
+    border-width: 1.5px;
+    height: 65px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 10px 0;
+}
+
+.drop-field .upload-img {
+    border: 1px solid hsl(245, 15%, 58%);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.drop-field img {
+    width: 20px;
+    margin-top: 5px;
+}
+
+.drop-field p {
+    color: hsl(252, 6%, 83%);
+    margin-bottom: 0 !important;
+}
+
+.warning-class {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0 30px;
+}
+
+.warning-class p {
+    color: hsl(245, 15%, 58%);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.warning-class img {
+    width: 10px;
+}
+
+.name-container label {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    /* border: 1px solid red; */
+}
+
+.name-container input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid hsl(245, 15%, 58%);
+    background-color: transparent;
+    color: hsl(245, 15%, 58%);
+    margin: 10px 0 20px;
+    font-size: 1rem;
+}
+
+.email-container label {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+.email-container input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid hsl(245, 15%, 58%);
+    background-color: transparent;
+    color: hsl(245, 15%, 58%);
+    margin: 10px 0 20px;
+    font-size: 1rem;
+}
+
+.github-container label {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+.github-container input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid hsl(245, 15%, 58%);
+    background-color: transparent;
+    color: hsl(245, 15%, 58%);
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#generate-button {
+    margin: 15px 0 0 0;
+    width: 355px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(7, 88%, 67%);
+    color: hsl(248, 70%, 10%);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.ticket-button:hover {
+    background-color: hsl(7, 71%, 60%);
+}
+
+#email-warning {
+    display: none;
+    gap: 5px;
+    color: red;
+}
+
+#email-warning p {
+    margin: 0 0 10px;
+}
+
+#email-warning img {
+    width: 10px;
+    margin-bottom: 10px;
+}
+
+.ticket-success {
+    background-color: #e0ffe0;
+    border: 2px solid #34a853;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #1a4d1a;
+}
+
+.success-message {
+    display: none;
+}
+
+.success-container {
+    text-align: center;
+    margin: 0 200px 0 200px;
+}
+
+.success-container .coding-logo {
+    width: 150px;
+    margin: 10px;
+}
+
+.success-container .main-heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5rem;
+    line-height: 1;
+    width: 500px;
+    position: relative;
+    left: 190px;
+}
+
+.success-container p {
+    color: hsl(245, 15%, 58%);
+    font-size: 1.2rem;
+}
+
+.success-container .email {
+    color: hsl(7, 86%, 67%);
+}
+
+.success-container .pattern-ticket {
+    width: 100%;
+    height: 300px;
+    background-image: url("assets/images/pattern-ticket.svg");
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+.card-top img {
+    position: relative;
+    top: 65px;
+    right: 100px;
+}
+
+.card-top p {
+    position: relative;
+    top: 60px;
+    right: 70px;
+}
+
+.card-bottom {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 235px;
+    top: 90px;
+}
+
+.user-image img {
+    width: 70px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    position: relative;
+    right: 25px;
+}
+
+.github-details {
+    display: flex;
+    gap: 2px;
+    position: relative;
+    bottom: 20px;
+}
+
+.card-tag p {
+    position: relative;
+    left: 185px;
+    bottom: 35px;
+    transform: rotate(90deg);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

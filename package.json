@@ -1,0 +1,15 @@
+{
+  "name": "conference-ticket-generator-main",
+  "version": "1.0.0",
+  "description": "Conferenec Ticket Generator Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MIT",
+  "license": "ISC",
+  "type": "commonjs",
+  "request": "launch",
+  "url": "http://localhost:3000",
+  "webRoot": "${workspaceFolder}"
+}
